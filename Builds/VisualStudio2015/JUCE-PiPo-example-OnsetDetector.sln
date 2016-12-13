@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2015
+Project("{9EDD8992-BAB8-804E-EA76-83C6666B2EF6}") = "JUCE-PiPo-example-OnsetDetector", "JUCE-PiPo-example-OnsetDetector.vcxproj", "{21CA4BDD-B6ED-7921-CE26-78C466AC3913}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21CA4BDD-B6ED-7921-CE26-78C466AC3913}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21CA4BDD-B6ED-7921-CE26-78C466AC3913}.Debug|Win32.Build.0 = Debug|Win32
+		{21CA4BDD-B6ED-7921-CE26-78C466AC3913}.Release|Win32.ActiveCfg = Release|Win32
+		{21CA4BDD-B6ED-7921-CE26-78C466AC3913}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

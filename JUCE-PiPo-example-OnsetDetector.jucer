@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="k2LkNv" name="JUCE-PiPo-example-OnsetDetector" projectType="guiapp"
+              version="1.0.0" bundleIdentifier="com.ircam.JUCE-PiPo-example-OnsetDetector"
+              includeBinaryInAppConfig="1" jucerVersion="4.3.0">
+  <MAINGROUP id="MvE1pS" name="JUCE-PiPo-example-OnsetDetector">
+    <GROUP id="{E6A3D91E-1B74-CF57-027F-84738D54BF81}" name="pipo-sdk">
+      <GROUP id="{60FFB161-1876-DB89-0D1F-80C651829C07}" name="collection">
+        <FILE id="xImhDv" name="PiPoCollection.h" compile="0" resource="0"
+              file="Dependencies/pipo-sdk/collection/PiPoCollection.h"/>
+        <FILE id="tEbGLI" name="PiPoModule.h" compile="0" resource="0" file="Dependencies/pipo-sdk/collection/PiPoModule.h"/>
+      </GROUP>
+      <GROUP id="{1C7D8B29-7EF8-ABBB-E985-9421CD4FE38C}" name="host">
+        <FILE id="khwmc1" name="mimo_host.h" compile="0" resource="0" file="Dependencies/pipo-sdk/host/mimo_host.h"/>
+        <FILE id="rqwOiW" name="PiPoHost.h" compile="0" resource="0" file="Dependencies/pipo-sdk/host/PiPoHost.h"/>
+      </GROUP>
+      <GROUP id="{8870FCB7-7F10-785F-799A-1C5750774B70}" name="include">
+        <FILE id="DHJLOR" name="mimo.h" compile="0" resource="0" file="Dependencies/pipo-sdk/include/mimo.h"/>
+        <FILE id="PTWWhC" name="PiPo.h" compile="0" resource="0" file="Dependencies/pipo-sdk/include/PiPo.h"/>
+        <FILE id="xnUhyt" name="PiPoParallel.h" compile="0" resource="0" file="Dependencies/pipo-sdk/include/PiPoParallel.h"/>
+        <FILE id="vXiPxy" name="PiPoSequence.h" compile="0" resource="0" file="Dependencies/pipo-sdk/include/PiPoSequence.h"/>
+        <FILE id="CDNi9W" name="RingBuffer.h" compile="0" resource="0" file="Dependencies/pipo-sdk/include/RingBuffer.h"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{6EA4E3D3-8020-707B-9B62-F5FCD7473277}" name="Source">
+      <FILE id="JyzNDz" name="AsyncRepainter.h" compile="0" resource="0"
+            file="Source/AsyncRepainter.h"/>
+      <FILE id="n3Vpus" name="JucePiPo.cpp" compile="1" resource="0" file="Source/JucePiPo.cpp"/>
+      <FILE id="i9kT8B" name="JucePiPo.h" compile="0" resource="0" file="Source/JucePiPo.h"/>
+      <FILE id="dd197J" name="JucePiPoHost.cpp" compile="1" resource="0"
+            file="Source/JucePiPoHost.cpp"/>
+      <FILE id="hKV2jp" name="JucePiPoHost.h" compile="0" resource="0" file="Source/JucePiPoHost.h"/>
+      <FILE id="v04DMF" name="PiPoCollection.cpp" compile="1" resource="0"
+            file="Source/PiPoCollection.cpp"/>
+      <FILE id="KCbk0X" name="PiPoOutputter.cpp" compile="1" resource="0"
+            file="Source/PiPoOutputter.cpp"/>
+      <FILE id="npZiPR" name="PiPoOutputter.h" compile="0" resource="0" file="Source/PiPoOutputter.h"/>
+      <FILE id="lVCJef" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="ahtJji" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" postbuildCommand="" iosDevelopmentTeamID=""
+               extraDefs="" customXcodeResourceFolders="$PROJECT_DIR/../../Libs/osx/pipo"
+               smallIcon="" bigIcon="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="PiPoGettingStartedDynamic"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="PiPoGettingStartedDynamic"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="PiPoGettingStarted"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="PiPoGettingStarted"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="PiPoGettingStarted"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="PiPoGettingStarted"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>

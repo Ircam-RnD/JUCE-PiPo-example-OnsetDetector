@@ -1,0 +1,3 @@
+[submodule "Dependencies/pipo-sdk"]
+	path = Dependencies/pipo-sdk
+	url = http://github.com/Ircam-RnD/pipo-sdk.git

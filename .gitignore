@@ -1,0 +1,5 @@
+**/.DS_Store
+**/Thumbs.db
+
+Builds/MacOSX/build/**
+**/xcuserdata/**
